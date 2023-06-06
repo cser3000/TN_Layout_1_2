@@ -1,0 +1,475 @@
+body {
+    box-sizing: border-box;
+    width: 1280px;
+    margin: auto;
+    background-color: var(--progect-color1);
+    font-family: Stem, cursive;
+    padding: 20px 20px 90px 20px;
+}
+
+:root {
+    --progect-color1: #F2F7FC;
+    --progect-color2: #315B7C;
+    --progect-color3: #121212;
+    --progect-color4: #666666;
+    --progect-color5: #7E9AB0;
+    --progect-color6: #000000;
+    --progect-color7: #FF5561;
+    --progect-color8: #FFFFFF;
+    --progect-color9: #121212;
+    --progect-color10: #232328;
+}
+
+.myHeader {
+    padding-left: 315px;
+    margin-bottom: 20px;
+}
+
+
+.elemInHeader {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 600px;
+    padding-left: 15px;
+}
+
+.searchButton {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    background: url(src/assets/image/icons/search.svg) no-repeat 0 50%;
+    position: absolute;
+    margin-left: 565px;
+}
+
+.supervisor {
+    width: 310px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.myImg {
+    width: 50px;
+    height: 50px;
+}
+
+.infoSupervisor {
+    margin-left: 10px;
+    display: block;
+    width: 210px;
+}
+
+.nameSupervisor {
+    width: 210px;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0;
+    height: 24px;
+    color: var(--progect-color3);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.postSupervisor {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 0;
+    height: 18px;
+    color: var(--progect-color4);
+    font-weight: 400;
+    font-family: Manrope, serif;
+}
+
+.mainContent {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 295px;
+}
+
+.navigation {
+    margin-left: 10px;
+}
+
+.navigation ul {
+    padding: 0;
+}
+
+
+.elemNav {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.homeLetter, .iconStaging, .iconListUl,
+.iconBooks, .iconBoxContainer, .iconBellOn,
+.iconUsers {
+    color: var(--progect-color2);
+    font-size: 16px;
+    height: 46px;
+    width: 230px;
+    display: inline-block;
+    padding-left: 55px;
+}
+
+.homeLetter:hover, .iconStaging:hover, .iconListUl:hover,
+.iconBooks:hover, .iconBoxContainer:hover, .iconBellOn:hover,
+.iconUsers:hover {
+    color: var(--progect-color8);
+    background-color: var(--progect-color5);
+    border-radius: 7px;
+}
+
+.homeLetter {
+    background: url(src/assets/image/icons/homeletter-red.svg) no-repeat 10px 50%;
+}
+
+.homeLetter:hover {
+    background: url(src/assets/image/icons/homeletter-white.svg) no-repeat 10px 50%, var(--progect-color5);
+}
+
+.iconStaging {
+    background: url(src/assets/image/icons/staging-red.svg) no-repeat 10px 50%;
+}
+
+.iconStaging:hover {
+    background: url(src/assets/image/icons/staging-white.svg) no-repeat 10px 50%, var(--progect-color5);
+}
+
+.iconListUl {
+    background: url(src/assets/image/icons/list-ul-red.svg) no-repeat 10px 50%;
+}
+
+.iconListUl:hover {
+    background: url(src/assets/image/icons/list-ul-white.svg) no-repeat 10px 50%, var(--progect-color5);
+}
+
+.iconBooks {
+    background: url(src/assets/image/icons/books-red.svg) no-repeat 10px 50%;
+}
+
+.iconBooks:hover {
+    background: url(src/assets/image/icons/books-white.svg) no-repeat 10px 50%, var(--progect-color5);
+}
+
+.iconBoxContainer {
+    background: url(src/assets/image/icons/box-container-red.svg) no-repeat 10px 50%;
+}
+
+.iconBoxContainer:hover {
+    background: url(src/assets/image/icons/box-container-white.svg) no-repeat 10px 50%, var(--progect-color5);
+}
+
+.iconBellOn {
+    background: url(src/assets/image/icons/bell-on-red.svg) no-repeat 10px 50%;
+}
+
+.iconBellOn:hover {
+    background: url(src/assets/image/icons/bell-on-white.svg) no-repeat 10px 50%, var(--progect-color5);
+}
+
+.iconUsers {
+    background: url(src/assets/image/icons/users-red.svg) no-repeat 10px 50%;
+}
+
+.iconUsers:hover {
+    background: url(src/assets/image/icons/users-white.svg) no-repeat 10px 50%, var(--progect-color5);
+}
+
+.linkText {
+    display: inline-block;
+    height: 24px;
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.infoQR {
+    display: block;
+    margin-top: 70px;
+    background-color: var(--progect-color8);
+    width: 295px;
+    border-radius: 10px;
+}
+
+.textQR {
+    padding-left: 21px;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: var(--progect-color2);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.imgQR {
+    display: block;
+    width: 130px;
+    height: 130px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.buttonQR {
+    margin: 40px 0 61px 63px;
+    color: var(--progect-color8);
+    background-color: var(--progect-color2);
+    border-radius: 10px;
+    height: 45px;
+    width: 168px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.mainInfo {
+    width: 925px;
+    color: white;
+    border-radius: 10px;
+    background: var(--progect-color10);
+}
+
+.mainBlock1 {
+    background: url("src/assets/image/jonny-mckenna-4igCpD-Lnfg-unsplash1.png") no-repeat 0 0, var(--progect-color10);
+    border-radius: 10px;
+}
+
+.text1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 470px;
+    margin-right: 0;
+}
+
+.text2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.text3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.text4 {
+    position: absolute;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+}
+
+.text5 {
+    font-size: 133px;
+    font-weight: 500;
+    line-height: 160px;
+    color: var(--progect-color7);
+    opacity: 0.35;
+    padding-right: 20px;
+}
+
+.text6 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    width: 620px;
+    text-align: center;
+    margin-left: 153px;
+}
+
+.text7 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.redButton {
+    color: var(--progect-color8);
+    background-color: var(--progect-color7);
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 190px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.headerSection {
+    display: flex;
+    align-items: center;
+}
+
+.moduleNumber {
+    display: flex;
+    align-items: center;
+}
+
+.infoBlock1 {
+    padding-top: 135px;
+    padding-left: 80px;
+    width: 410px;
+}
+
+.infoBlock2 {
+    padding-top: 20px;
+    padding-left: 397px;
+}
+
+.infoBlock3 {
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.infoBlock4 {
+    padding-top: 20px;
+    padding-left: 397px;
+}
+
+.infoBlock5 {
+    padding-top: 80px;
+    padding-left: 80px;
+    width: 460px;
+}
+
+.infoBlock6 {
+    padding-top: 80px;
+}
+
+.myList {
+    list-style-type: square;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.myListItem {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Manrope, serif;
+}
+
+.iconsOpportunity {
+    display: block;
+    margin: auto;
+}
+
+.allOpportunityInfo {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.opportunityInfo {
+    position: relative;
+    width: 220px;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 40px;
+}
+
+
+.myFooter {
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-bottom: 80px;
+}
+
+.question {
+    height: 43px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.questionText {
+    font-size: 36px;
+}
+
+.questionText::before {
+    content: " ";
+    width: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    background: var(--progect-color2);
+}
+
+.usersContent {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.usersPhoto {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.icon1 {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.icon2 {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.mainBlock2 {
+    background: linear-gradient(180deg, rgba(49, 91, 124, 0.02) 35.84%, #222328 70%), url("src/assets/image/danka-peter-xv4L_bb0Z_8-unsplash1.png") no-repeat;
+}
+
+.infoBlock7 {
+    padding-top: 135px;
+    padding-left: 80px;
+    width: 550px;
+    color: var(--progect-color9);
+}
+
+.infoBlock8 {
+    color: var(--progect-color9);
+    padding-left: 397px;
+    width: 430px;
+}
+
+.infoBlock9 {
+    padding-left: 80px;
+    width: 390px;
+}
+
+.infoBlock10 {
+    margin: 0;
+    padding-left: 397px;
+    width: 500px;
+}
